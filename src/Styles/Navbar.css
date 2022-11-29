@@ -1,0 +1,103 @@
+.nav-container {
+  height: 5rem;
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+}
+.nav-container nav {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+  /* padding-right: 5%; */
+}
+nav .logo {
+  padding-left: 5%;
+  width: 30%;
+  display: flex;
+  cursor: pointer;
+  /* background-color: #204b7a; */
+  /* text-align: center; */
+  align-items: center;
+  justify-content: start;
+}
+nav .logo-img {
+  height: 3rem;
+  padding-right: 1rem;
+  color: #204b7a;
+}
+.logo label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  /* letter-spacing: 1px; */
+  text-transform: uppercase;
+  cursor: pointer;
+}
+nav ul {
+  cursor: pointer;
+  background-color: transparent;
+  /* flex: 80%; */
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav ul li {
+  display: inline-block;
+  /* line-height: 80px; */
+  margin: 0 5px;
+  list-style: none;
+  padding-right: 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 3px;
+}
+nav ul .btns {
+  margin: 0 6% 0 1rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul .btns button {
+  padding: 5px 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid;
+}
+nav ul .btns button:nth-child(2) {
+  margin-left: 1rem;
+  background-color: var(--primary-btn-clr);
+  color: #000000;
+  border: 1px solid var(--primary-btn-clr);
+}
+
+#menu {
+  margin-left: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transform: translateX(0.5rem);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  #menu {
+    display: block;
+  }
+  nav ul li a {
+    display: none;
+  }
+}

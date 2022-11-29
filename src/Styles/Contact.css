@@ -1,0 +1,73 @@
+.contact-container {
+  height: max-content;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.contact-container .contact-wrapper {
+  width: 90%;
+  padding-left: 4%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-wrapper .title-wrapper {
+  height: 27rem;
+  width: 16.1rem;
+  margin-right: 1.2rem;
+}
+.title-wrapper .contact-title-card {
+  background-color: var(--primary-card-clr);
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  justify-content: center;
+  cursor: pointer;
+  height: 14rem;
+  border-radius: 10px;
+}
+.contact-wrapper .contact-map-wrapper {
+  width: 78%;
+  height: 27rem;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-map-wrapper .contact-info {
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2.7rem 2rem 1rem;
+  line-height: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contact-info h3 {
+  padding-bottom: 0.8rem;
+}
+.contact-info .support {
+  padding-bottom: 2rem;
+}
+.support .mobile,
+.support .mail,
+.sales .mobile,
+.sales .mail {
+  display: flex;
+}
+.support label,
+.sales label {
+  padding-right: 0.8rem;
+}
+.contact-info button {
+  margin-top: 4rem;
+}
+.map iframe {
+  border: none;
+  border-radius: 10px;
+  height: 27rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

@@ -1,0 +1,22 @@
+#btn {
+  width: 13rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.8rem 0 2rem;
+  align-items: center;
+  background-color: #e0e0e0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#btn p {
+  color: var(--primary-text-clr);
+  font-weight: 800;
+  font-size: 1rem;
+}
+#btn-icons {
+  font-size: 2rem;
+  color: var(--primary-btn-clr);
+}

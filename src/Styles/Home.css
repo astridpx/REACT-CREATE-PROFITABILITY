@@ -1,0 +1,128 @@
+.home-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  /* background-color: aqua; */
+  overflow: hidden;
+}
+.banner-wrap {
+  transform: rotate(-35deg) translate(41rem, -1rem);
+  transform: rotate(-35deg) translate(41rem, -1rem);
+  width: 100%;
+  height: 110%;
+  border: none;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+.banner-wrap .banner {
+  transform: rotate(35deg) translate(-17rem, 12rem);
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.banner-wrap .overlay {
+  background: linear-gradient(rgba(87, 111, 247, 0.4), rgba(65, 89, 224, 0.3));
+  /* background: linear-gradient(
+    #206adaf3 #2067d1f3 #2067d19d#2067d1c2 rgba(32, 103, 209, 0.616),
+    rgba(65, 89, 224, 0.2)
+  ); */
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.home-container .hero {
+  width: 82%;
+  height: 100%;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+.hero .hero-child {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  /* background-color: bisque; */
+  row-gap: 1rem;
+}
+.hero-child .hero-text {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  color: var(--primary-text-clr1);
+}
+
+.hero-child p {
+  color: var(--primary-text-clr);
+  font-weight: 500;
+}
+.hero-child button {
+  width: 15rem;
+  height: 3rem;
+  transform: translateY(5rem);
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.8rem 0 2rem;
+  align-items: center;
+  background-color: #e0e0e0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.hero-child button p {
+  font-weight: 800;
+  font-size: 1rem;
+}
+.hero-child button .icons {
+  font-size: 2rem;
+  color: var(--primary-btn-clr);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1082px) {
+  .banner-wrap {
+    transform: rotate(-35deg) translate(30rem, 10rem);
+    transform: rotate(-35deg) translate(400px, 160px);
+  }
+  .banner-wrap .banner {
+    transform: rotate(35deg) translate(-17rem, 5rem);
+  }
+  .hero-child .hero-text,
+  .hero-child p {
+    z-index: 1;
+  }
+}
+
+/* Android */
+@media only screen and (max-width: 750px) {
+  .banner-wrap {
+    transform: rotate(0) translate(0);
+    border-radius: 0;
+  }
+  .banner-wrap .banner {
+    transform: rotate(0) translate(-15rem);
+    background-image: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+  }
+  .hero-child .hero-text {
+    color: #f1f1f1;
+  }
+  .hero-child p {
+    color: #d6d6d6;
+  }
+  .hero-child button p {
+    color: #686868;
+  }
+}

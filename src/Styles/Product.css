@@ -1,0 +1,108 @@
+.product-container {
+  height: max-content;
+  width: 100%;
+  padding-top: 4rem;
+  margin-bottom: 1rem;
+}
+.product-container .card-wrapper {
+  width: 90%;
+  padding-left: 4%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card-wrapper .title-wrapper {
+  height: 32rem;
+  width: 16.1rem;
+  margin-right: 1.2rem;
+}
+.title-wrapper .title-card {
+  background-color: var(--primary-card-clr);
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  justify-content: center;
+  cursor: pointer;
+  height: 15rem;
+  border-radius: 10px;
+}
+.slider-button {
+  height: 16rem;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+.slider-button button {
+  margin-top: auto;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  margin-left: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 6px 15px;
+}
+.slider-button .triangle-btn {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--primary-text-clr);
+}
+.slider-button .first-btn {
+  padding-right: 4px;
+}
+.slider-button .sec-btn {
+  padding-left: 4px;
+}
+/* slider */
+.mySwiper {
+  width: 78%;
+}
+.swiper-card {
+  border-radius: 10px;
+  height: 32rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: #fff;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.swiper-card .icon-cloud {
+  float: right;
+  color: var(--primary-btn-clr);
+  font-size: 2rem;
+}
+.swiper-card .card-logo {
+  height: 3.5rem;
+  width: 100%;
+  /* padding-bottom: 1rem; */
+}
+.swiper-card:nth-child(2) .card-logo {
+  height: 1.7rem;
+  margin: 1rem 0;
+}
+.swiper-card h3 {
+  padding-bottom: 1rem;
+  color: var(--primary-text-clr1);
+}
+.swiper-card:nth-child(2) h3 {
+  font-size: 1.1rem;
+}
+.swiper-card p {
+  color: var(--primary-text-clr);
+}
+.swiper-card button {
+  /* margin-top: 2.5rem; */
+  bottom: 20px;
+  position: absolute;
+}
